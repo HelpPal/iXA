@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    tools:context=".ActivityMain" >
+
+    
+
+    <TextView
+        android:id="@+id/txtCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgHome"
+        android:layout_centerHorizontal="true"
+        android:text="Augmented Reality"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/label_bizName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCategory"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Loading..."
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imgHome"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="Logo"
+        android:src="@drawable/main_logo" />
+
+    <TextView
+        android:id="@+id/label_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="10dp"
+        android:text="Please rotate your device to landscape mode."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

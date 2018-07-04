@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:background="#666666"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/detail_layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#07306e"
+            android:weightSum="10" >
+
+            <ImageView
+                android:id="@+id/imgBizCategory"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/label_bizType"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="8"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="Business Type"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgClose"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/btn_close" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/detail_layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail_layout_1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="1dp"
+            android:background="#f0f0f0"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/label_bizName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Business Name"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/label_bizDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:enabled="true"
+                android:lines="3"
+                android:overScrollMode="always"
+                android:scrollbars="vertical"
+                android:text="Business Description Business Description Business Description Business Description Business Description Business Description Business Description Business Description Business Description Business Description Business Description Business Description Business Description Business Description Business Description Business Description Business Description Business Description Business Description Business Description"
+                android:textColor="#333333" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/detail_layout_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail_layout_2"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <Button
+                android:id="@+id/btnCall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:background="#ffffffff"
+                android:drawableLeft="@drawable/phone"
+                android:lineSpacingExtra="1dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="3dp"
+                android:text="Call"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/btnMap"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:background="#ffffffff"
+                android:drawableLeft="@drawable/map"
+                android:lineSpacingExtra="1dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="3dp"
+                android:text="Map"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/btnShare"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:background="#ffffffff"
+                android:drawableLeft="@drawable/share"
+                android:lineSpacingExtra="1dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="3dp"
+                android:text="Share"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

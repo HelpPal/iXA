@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#f8f8f8"
+    android:orientation="vertical" >
+
+  <TextView
+      android:id="@+id/marker_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="left|center_vertical"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:gravity="center"
+      android:text="Title"
+      android:textColor="#07306e"
+      android:textStyle="bold" />
+  
+  <TextView
+      android:id="@+id/marker_address"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="left|center_vertical"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:gravity="center"
+      android:text="Address"
+      android:textColor="#c00c0a" />
+
+ </LinearLayout>

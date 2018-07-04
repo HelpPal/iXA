@@ -1,0 +1,324 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    tools:context=".ActivityMain" >
+
+    <RelativeLayout
+        android:id="@+id/layout_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/webview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:text="Add your Business"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/webview_title"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            android:src="@drawable/btnbackarrow" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_title_view"
+        android:layout_marginTop="20dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#c00c0a"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/TextView01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="Your Details"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <TableLayout
+                    android:id="@+id/tableLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:stretchColumns="2" >
+
+                    <TableRow
+                        android:id="@+id/tableRow1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#F0F0F0"
+                        android:weightSum="10" >
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="4"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="Your Name"
+                            android:textColor="#07306e"
+                            android:textSize="16sp" />
+
+                        <FrameLayout
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6" >
+
+                            <EditText
+                                android:id="@+id/txtName"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|center_vertical"
+                                android:background="#00000000"
+                                android:hint="Required"
+                                android:inputType="text"
+                                android:paddingBottom="10dp"
+                                android:paddingTop="10dp" />
+                        </FrameLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF" >
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="4"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="Your Email"
+                            android:textColor="#07306e"
+                            android:textSize="16sp" />
+
+                        <FrameLayout
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6" >
+
+                            <EditText
+                                android:id="@+id/txtEmail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|center_vertical"
+                                android:background="#00000000"
+                                android:hint="Required"
+                                android:inputType="textEmailAddress"
+                                android:paddingBottom="10dp"
+                                android:paddingTop="10dp" />
+                        </FrameLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#F0F0F0" >
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="4"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="Phone Number"
+                            android:textColor="#07306e"
+                            android:textSize="16sp" />
+
+                        <FrameLayout
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6" >
+
+                            <EditText
+                                android:id="@+id/txtPhone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|center_vertical"
+                                android:background="#00000000"
+                                android:hint="Required"
+                                android:inputType="phone"
+                                android:paddingBottom="10dp"
+                                android:paddingTop="10dp" />
+                        </FrameLayout>
+                    </TableRow>
+                </TableLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#c00c0a"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/label_bizName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="Business Details"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/detail_layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F0F0F0"
+                    android:weightSum="10" >
+
+                    <TextView
+                        android:id="@+id/TextView02"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="4"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="Business Name"
+                        android:textColor="#07306e"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/txtBizName"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:background="#00000000"
+                        android:ems="10"
+                        android:hint="Required"
+                        android:inputType="text"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/detail_layout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:weightSum="10" >
+
+                    <TextView
+                        android:id="@+id/btnBizCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="4"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="Business Category"
+                        android:textColor="#0000ff"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#f0f0f0"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/TextView06"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="Featured Business"
+                        android:textColor="#07306e"
+                        android:textSize="16sp" />
+
+                    <ToggleButton
+                        android:id="@+id/toggleFeature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="22dp"
+                        android:text="Featured Bussiness" />
+
+                    <TextView
+                        android:id="@+id/label_bizDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/TextView06"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingBottom="20dp"
+                        android:text="Feature your business with a small fee and be found by customers across the world. Be special in the Augmented Reality."
+                        android:textColor="#07306e" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txtCategory"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:background="#07306e"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:onClick="onSubmit"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Submit"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        
+    </ScrollView>
+
+</RelativeLayout>

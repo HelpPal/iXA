@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="10"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/place_icon"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:src="@drawable/administrator" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="9"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/txtAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="top"
+            android:text="Business Address"
+            android:textColor="#555555"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Business Name"
+            android:textColor="#c00c0a"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
